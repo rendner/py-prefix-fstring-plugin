@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>cms.rendner.intellij.py-prefix-fstring-plugin</id>
+    <name>Python: Prefix f-string Intention</name>
+    <vendor>cms.rendner</vendor>
+
+    <description><![CDATA[
+    Provides a "prefix f-string" intention.
+    <br/><br/>
+    The intention prefixes a string literal with <i>f</i> without additional changes.
+    The intention has the label <i>Prefix string with 'f' to make it an f-string</i>.
+    ]]></description>
+
+    <depends>com.intellij.modules.python</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <intentionAction>
+            <className>cms.rendner.intellij.python.intentions.PyPrefixFStringIntention</className>
+            <category>Python</category>
+        </intentionAction>
+    </extensions>
+</idea-plugin>
