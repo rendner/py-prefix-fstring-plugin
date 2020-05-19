@@ -1,0 +1,12 @@
+<idea-plugin>
+    <!-- This file is required to register the intention during the tests. -->
+    <id>cms.rendner.intellij.py-prefix-fstring-plugin_test</id>
+    <vendor>cms.rendner</vendor>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <intentionAction>
+            <className>cms.rendner.intellij.python.intentions.PyPrefixFStringIntention</className>
+            <category>Python</category>
+        </intentionAction>
+    </extensions>
+</idea-plugin>
