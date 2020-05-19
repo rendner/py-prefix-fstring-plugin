@@ -25,6 +25,7 @@ intellij {
     version '2019.2'
     type 'PC'
     downloadSources = false
+    updateSinceUntilBuild = false
 }
 
 buildSearchableOptions {
@@ -33,8 +34,6 @@ buildSearchableOptions {
 
 patchPluginXml {
     version = project.version
-    sinceBuild = '192'
-    untilBuild = '201.*'
 }
 
 runIde {

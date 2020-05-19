@@ -12,6 +12,8 @@
 
     <depends>com.intellij.modules.python</depends>
 
+    <idea-version since-build="192" />
+
     <extensions defaultExtensionNs="com.intellij">
         <intentionAction>
             <className>cms.rendner.intellij.python.intentions.PyPrefixFStringIntention</className>
