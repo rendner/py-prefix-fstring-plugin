@@ -1,1 +1,0 @@
-x = 'my ' 'test {<caret>'
