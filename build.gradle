@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'cms.rendner.intellij'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
@@ -38,4 +38,10 @@ patchPluginXml {
 
 runIde {
     //ideDirectory '/snap/intellij-idea-community/current'
+}
+
+publishPlugin {
+    // specify via command line using '-Dpublish.username=...'
+    //username = System.properties['publish.username']
+    //password = System.properties['publish.password']
 }
