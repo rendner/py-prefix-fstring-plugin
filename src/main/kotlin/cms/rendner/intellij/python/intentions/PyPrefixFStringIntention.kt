@@ -1,5 +1,6 @@
 package cms.rendner.intellij.python.intentions
 
+import com.intellij.codeInsight.intention.HighPriorityAction
 import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.project.Project
 import com.intellij.psi.PsiFile
@@ -16,7 +17,7 @@ import com.jetbrains.python.psi.PyStringElement
  *
  * @author Daniel Schmidt
  */
-class PyPrefixFStringIntention : PyBaseIntentionAction() {
+class PyPrefixFStringIntention : PyBaseIntentionAction(), HighPriorityAction {
 
     init {
         text = "Prefix string with 'f' to make it an f-string"

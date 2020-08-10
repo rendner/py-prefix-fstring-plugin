@@ -8,11 +8,21 @@
     <br/><br/>
     The intention prefixes a string literal with <i>f</i> without additional changes.
     The intention has the label <i>Prefix string with 'f' to make it an f-string</i>.
+    <br/><br/>
+    <b>Note:</b>
+    <br/>PyCharm 2020.2 now auto-enables f-strings when the user adds curly braces within a string statement.
+    <br/>Source: <a href="https://twitter.com/pycharm/status/1291780907343503361">Twitter - JetBrains PyCharm</<
     ]]></description>
 
     <depends>com.intellij.modules.python</depends>
 
     <idea-version since-build="192" />
+
+    <change-notes><![CDATA[
+    <b>1.1</b> - rank intention higher to be listed before <i>"convert double-quoted string"</i> intention
+    <br/>
+    <b>1.0</b> - Initial release of the plugin.
+    ]]></change-notes>
 
     <extensions defaultExtensionNs="com.intellij">
         <intentionAction>
